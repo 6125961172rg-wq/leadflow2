@@ -1,0 +1,59 @@
+{
+  "summary": "Comprehensive testing of lead generation template completed. Backend API integration working perfectly with 100% success rate. Frontend forms successfully capturing leads with proper validation and success notifications. Minor UI error handling improvements needed.",
+  
+  "backend_issues": {
+    "critical_bugs": [],
+    "flaky_endpoints": []
+  },
+  
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "LeadCaptureModal error handling",
+        "issue": "Error toast notification not appearing for backend validation errors (invalid email format)",
+        "selector": "text='Failed to submit. Please try again or contact us directly.'",
+        "fix_priority": "MEDIUM"
+      },
+      {
+        "component": "Mobile navigation",
+        "issue": "Get Started button may have visibility issues on mobile after viewport changes",
+        "affected_selectors": ["button:has-text('Get Started')"],
+        "fix_priority": "LOW"
+      }
+    ],
+    "integration_issues": []
+  },
+  
+  "passed_tests": [
+    "Backend API health check (200 OK)",
+    "Lead creation endpoint (201 Created)",
+    "Form validation (422 for invalid data)", 
+    "Get all leads endpoint (200 OK)",
+    "Get single lead endpoint (200 OK)",
+    "Update lead status endpoint (200 OK)",
+    "Delete lead endpoint (204 No Content)",
+    "Navbar Get Started button opens modal",
+    "Hero section Get Started button opens modal",
+    "Lead capture modal form submission",
+    "Contact page form submission", 
+    "Success toast notifications",
+    "Form reset after successful submission",
+    "Form validation prevents empty submissions",
+    "Modal close functionality",
+    "Mobile responsive layout"
+  ],
+  
+  "test_report_links": ["/app/backend_test.py"],
+  
+  "action_item_for_main_agent": "Fix error toast notification display for backend validation errors in LeadCaptureModal component. Check toast notification library (sonner) configuration and error handling in catch blocks.",
+  
+  "updated_files": ["/app/backend_test.py"],
+  
+  "success_percentage": {
+    "backend": "100%", 
+    "frontend": "94%"
+  },
+  
+  "should_call_test_agent_after_fix": "false",
+  "should_main_agent_test_itself": "true"
+}

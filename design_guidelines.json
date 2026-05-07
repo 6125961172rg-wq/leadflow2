@@ -1,0 +1,133 @@
+{
+  "project_name": "LeadGen Pro - Swiss Corporate Edition",
+  "version": "2.0.0",
+  "theme_strategy": {
+    "mode": "system",
+    "primary_archetype": "Swiss & High-Contrast",
+    "secondary_archetype": "Organic & Earthy",
+    "emotional_goal": "Professional Authority meets Human Trust"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Syne\", \"Clash Display\", sans-serif",
+      "body": "\"Manrope\", \"Inter\", sans-serif",
+      "code": "\"JetBrains Mono\", monospace"
+    },
+    "scale": {
+      "display": "text-6xl md:text-7xl lg:text-8xl tracking-tighter font-bold",
+      "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-3xl md:text-4xl tracking-tight font-semibold",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "body_lg": "text-lg md:text-xl leading-relaxed font-light text-muted-foreground",
+      "body": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-xs tracking-widest uppercase font-semibold text-muted-foreground"
+    },
+    "installation_instructions": "Import fonts from Google Fonts: Syne (400, 700, 800) and Manrope (300, 400, 500, 600)."
+  },
+  "colors": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0f172a",
+      "primary": "#4f46e5",
+      "primary_foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary_foreground": "#0f172a",
+      "muted": "#f8fafc",
+      "muted_foreground": "#64748b",
+      "accent": "#e0e7ff",
+      "accent_foreground": "#3730a3",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#4f46e5"
+    },
+    "dark": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "primary": "#6366f1",
+      "primary_foreground": "#ffffff",
+      "secondary": "#1e293b",
+      "secondary_foreground": "#f8fafc",
+      "muted": "#0f172a",
+      "muted_foreground": "#94a3b8",
+      "accent": "#1e1b4b",
+      "accent_foreground": "#c7d2fe",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#6366f1"
+    }
+  },
+  "layout_grid": {
+    "container": "container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl",
+    "section_spacing": "py-24 md:py-32",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8",
+    "swiss_grid": "grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-16"
+  },
+  "ui_components": {
+    "buttons": {
+      "default": "rounded-full font-medium transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20",
+      "outline": "rounded-full border-2 border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5",
+      "ghost": "rounded-lg hover:bg-muted text-muted-foreground hover:text-foreground"
+    },
+    "cards": {
+      "style": "bg-card/50 backdrop-blur-xl border border-white/10 dark:border-white/5 rounded-2xl p-8 hover:border-primary/20 transition-colors duration-500",
+      "hover_effect": "group hover:-translate-y-1 transition-transform duration-300"
+    },
+    "inputs": {
+      "style": "bg-background/50 border-input focus:border-primary focus:ring-1 focus:ring-primary rounded-xl h-12 px-4 transition-all"
+    }
+  },
+  "visual_enhancers": {
+    "gradients": {
+      "hero_glow": "bg-gradient-to-tr from-primary/20 via-primary/5 to-transparent blur-3xl",
+      "text_gradient": "bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60"
+    },
+    "borders": "border border-border/50",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none"
+  },
+  "image_assets": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1758637612717-e0cd7dc3cdea?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Abstract Blue Tech Background",
+      "usage": "Hero section background with heavy overlay"
+    },
+    "about_team": {
+      "url": "https://images.unsplash.com/photo-1758873269317-51888e824b28?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Diverse Team Meeting",
+      "usage": "About Us section main image"
+    },
+    "services_process": {
+      "url": "https://images.unsplash.com/photo-1758691736872-61a1f75fe2d5?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Team Collaboration",
+      "usage": "How It Works or Services section"
+    },
+    "workspace_detail": {
+      "url": "https://images.unsplash.com/photo-1752223638233-4c9545333f89?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Minimal Workspace",
+      "usage": "Contact or Blog section"
+    },
+    "grid_texture": {
+      "url": "https://images.unsplash.com/photo-1771011726574-60ab6028724a?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Grid Texture",
+      "usage": "Footer background or technical accent"
+    }
+  },
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use asymmetry.",
+    "Typography is the hero. Use the specified font family and scale.",
+    "Dark mode is primary. Ensure contrast is high.",
+    "Use 'lenis' for smooth scrolling if possible, or simulate weight.",
+    "No purple/pink gradients unless specified. Stick to Deep Indigo/Blue.",
+    "Animations must be purposeful, not random.",
+    "Interactive elements must have clear hover states.",
+    "All interactive elements must include data-testid attribute."
+  ],
+  "implementation_steps": [
+    "Update tailwind.config.js with new colors and font families.",
+    "Install Google Fonts in index.css (Syne, Manrope).",
+    "Refactor App.css / global css to remove default centering.",
+    "Update Homepage hero with new layout and background image.",
+    "Redesign Navbar to be sticky, glassmorphism.",
+    "Redesign Services section using Bento Grid.",
+    "Apply new typography scale globally."
+  ]
+}

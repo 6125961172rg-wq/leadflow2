@@ -1,0 +1,32 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom selection colors */
+::selection {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: inherit;
+}
+
+/* Button hover transitions */
+button {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Link hover transitions */
+a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Image loading optimization */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
